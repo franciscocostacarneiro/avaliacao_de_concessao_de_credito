@@ -7,6 +7,12 @@ from sklearn.pipeline import Pipeline
 import joblib
 from joblib import load
 
+# URL da imagem
+url = "https://www.cora.com.br/blog/wp-content/uploads/elementor/thumbs/emprestimo_com_garantia_de_veiculo-py61qnprw8q3sxgh445cnoctoswl9vyy0vu26a21kw.jpg.webp"
+
+# Exibir a imagem
+st.image(url, use_column_width=True)
+
 #carregando os dados 
 dados = pd.read_csv('https://raw.githubusercontent.com/alura-tech/alura-tech-pos-data-science-credit-scoring-streamlit/main/df_clean.csv')
 
